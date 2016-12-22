@@ -27,7 +27,7 @@ public class MysqlDB {
 		Connection conn = null;
 		try {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-			conn = DriverManager.getConnection("jdbc:sqlserver://127.0.0.1:1433;databaseName=forum;user=text;password=sql");
+			conn = DriverManager.getConnection("jdbc:sqlserver://127.0.0.1:1433;databaseName=forum;user=sa;password=sql");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
