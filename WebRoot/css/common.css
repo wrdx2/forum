@@ -1,0 +1,395 @@
+/* CSS Document */
+body {
+	text-align: center;
+	margin: 10px auto;
+	font-size: 12px;
+}
+
+#main {
+	margin: 0 auto;
+	width: 950px;
+	text-align: left;
+	position: relative;
+}
+
+.clear {
+	width: 100%;
+	height: 0;
+	font-size: 0%;
+	float: none;
+	overflow: hidden;
+	clear: both;
+} /*clear float*/
+#backNews {
+	padding: 20px 0 20px 40px;
+	margin: 10px 0 -10px 0;
+	font-size: 13px;
+	font-weight: bold;
+	background: #FFC;
+	border: 1px solid #CAD9EA;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.message {
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-weight: bold;
+	color: #000;
+	border: 1px #CAD9EA solid;
+}
+/*the style of the head*/
+#top {
+	height: 90px;
+	width: 950px;
+	position: relative;
+	background: url(./../images/common/bodybg.jpg) repeat-x;
+}
+
+#top #topLeft{
+	position: absolute;
+	top: 10px;
+}
+
+#top #topRight {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+
+#menu {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	border: 1px #CAD9EA solid;
+	background: url(./../images/common/menu_bg.gif) repeat-x;
+}
+
+#menu a {
+	text-decoration: none;
+	margin: 0 15px;
+	color: #000;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+/*the style of the foot*/
+#foot {
+	font-size: 12px;
+	width: 950px;
+	height: 45px;
+	padding: 20px 0;
+	text-align: center;
+	margin: 20px 0;
+	background-color: #00CCFF;
+	clear: both;
+}
+
+#foot p {
+	height: 20px;
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+#foot span {
+	margin: 0 6px;
+}
+
+#foot a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#foot a:hover {
+	color: #666699;
+	text-decoration: underline;
+}
+
+/*the style of the userLogin*/
+#login {
+	width: 230px;
+	height: 170px;
+	padding: 40px;
+	border: 10px solid #5189C1;
+	display:none;
+	position: fixed;
+	top:25%;
+	left:37%;
+	z-index: 99999;
+	background-color: white;
+}
+
+#closeLogin a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	text-decoration: none;
+	background: url(./../images/common/cross_02.jpg);
+}
+
+#closeLogin a:hover,#closeLogin a:active {
+	text-decoration: none;
+	background: url(./../images/common/cross_01.jpg);
+}
+
+#loginTitle {
+	font-size: 16px;
+	font-weight: bold;
+	margin: -10px 0 10px 0;
+	height: 24px;
+	line-height: 24px;
+}
+
+#loginButton {
+	margin: 10px auto;
+	margin-left: 55px;
+}
+
+#login table th {
+	font: 12px normal;
+	padding: 10px 5px;
+}
+
+#login .text {
+	height: 18px;
+	line-height: 18px;
+	padding: 0;
+	margin-left: 4px;
+	font-family: Tahoma, sans-serif;
+	border: solid 1px #27B3FE;
+}
+
+/*the style of the index.jsp */
+#topicList {
+	width: 950px;
+	border: none;
+	font-size: 13px;
+	text-align: center;
+}
+
+.topicTitleList {
+	padding-left: 10px;
+}
+
+#topicList th {
+	height: 24px;
+	line-height: 24px;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-weight: normal;
+}
+
+#topicList td {
+	height: 24px;
+	line-height: 24px;
+}
+
+#topic a:hover {
+	text-decoration: none;
+	color: #CCCCCC;
+}
+
+/*the style of the modifyInfo.jsp */
+#modifyUserInfoTitle {
+	font-weight: bold;
+	font-size: 14px;
+	color: #333;
+	margin: 20px 0;
+}
+
+#modifyUserInfo {
+	color: #666666;
+}
+
+#modifyUserInfo .text {
+	font-family: Tahoma, sans-serif;
+}
+
+#modifyUserInfo th {
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 20px;
+	font-weight: normal;
+}
+
+#modifyUserInfo td {
+	width: 360px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 20px;
+	font-family: Tahoma, sans-serif;
+}
+
+#modifyUserInfo .tips {
+	width: 100px;
+	margin-left: 10px;
+}
+
+/*the style of the viewContent.jsp*/
+.replyContent {
+	width: 100%;
+	margin-bottom: 20px;
+	border: #CCCCCC dashed 1px;
+	position: relative;
+	display: block;
+}
+
+.replyLeftTop {
+	text-align: left;
+	padding-bottom: 10px;
+	line-height: 20px;
+	background: #E8F3FD;
+	border-bottom: 2px solid #CAD9EA;
+}
+
+.replyContent th {
+	width: 150px;
+	height: 200px;
+	padding: 15px;
+	text-align: center;
+	font-weight: normal;
+	background: #E8F3FD;
+}
+
+.replyContent th img {
+	width: 115px;
+	height: 100px;
+	margin: 20px 0;
+}
+
+.replyContent td {
+	width: 760px;
+	height: 100px;
+	padding: 15px;
+}
+
+.replyListTop {
+	height: 25px;
+	line-height: 25px;
+	border-bottom: 2px solid #CAD9EA;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.replyFloor {
+	width: 50px;
+	height: 20px;
+	font-weight: bold;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999999;
+	text-align: right;
+}
+
+.deleteReply {
+	border: 0;
+	margin-left: 2px;
+}
+
+.replyUserMessage {
+	width: 120px;
+	padding: 20px;
+	display: none;
+	text-align: left;
+	position: absolute;
+	left: 150px;
+	/* top: -130px; */
+	z-index: 99999;
+	background-color: #FFFFFF;
+	border: 2px solid #5189C1;
+}
+
+.replyUserMessage span {
+	margin: 10px 0;
+	text-align: center;
+	color: #006699;
+	font-size: 14px;
+}
+
+.replyUserMessage ul {
+	margin: 20px 0 0 0;
+}
+
+.replyUserMessage li {
+	height: 20px;
+	line-height: 20px;
+}
+
+/*the style of the userList*/
+#userListPage {
+	margin-top: 20px;
+}
+
+#userListPage form {
+	margin: 0;
+	padding: 0;
+}
+
+.userList {
+	width: 950px;
+	overflow: hidden;
+	margin: 0;
+}
+
+.userList .text {
+	width: 100%;
+	height: 15px;
+}
+
+.userList li {
+	height: 22px;
+	line-height: 22px;
+	padding: 5px 10px;
+	float: left;
+	border: 1px solid #CCC;
+	overflow: hidden;
+}
+
+.sub {
+	margin: 10px 20px 6px 30px;
+}
+
+.common {
+	padding-left: 60px;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #369;
+}
+
+a:visited {
+	text-decoration: none;
+}
+a:ACTIVE {
+	color:#ff0000;
+}

@@ -1,0 +1,53 @@
+.onShow {
+	background: url(../images/register/onShow.gif) no-repeat;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #777;
+}
+
+.onFocus {
+	background: url(../images/register/onFocus.gif) no-repeat;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #444;
+}
+
+.onError {
+	background: url(../images/register/onError.gif) no-repeat;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #FF0000;
+}
+
+.onCorrect {
+	background: url(../images/register/onCorrect.gif) no-repeat;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #008000;
+}
+
+.onLoad {
+	background: url(../images/register/onLoad.gif) no-repeat 3px 3px;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #666;
+}
+
+.onCorrect2 {
+	background: url(../images/register/onCorrect.gif) no-repeat;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 22px;
+	color: #008000;
+	font-style: italic;
+}
+
+.input_error {
+	border: 1px dotted red !important;
+}

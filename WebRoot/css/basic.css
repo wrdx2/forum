@@ -1,0 +1,339 @@
+@CHARSET "UTF-8";
+/* -------------------------------------------------------------- 
+  
+   reset.css
+   * Resets default browser CSS.
+   
+-------------------------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+table.form-table td{padding:5px 3px;}
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img {
+ zoom:1;
+ border: none; 
+ hide-focus: expression(this.hideFocus=true);  /* for ie 5+ */
+ outline: none;  /* for firefox 1.5 + */
+}
+/* Tags
+----------------------------------------*/
+body {
+	background-color: #FFFFFF;
+	line-height: 1.5; 
+}
+
+body,p,td,th,li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+h1 {
+	color: #5C8127;
+	margin: .825em 0 .5em 0;
+	font-size: 2.125em;
+}
+
+h2 {
+	color: #5C8127;
+	margin: .825em 0 .5em 0;
+	font-size: 1.75em;
+}
+
+h3 {
+	color: #5C8127;
+	margin: .825em 0 .5em 0;
+	font-size: 1.5em;
+}
+
+h4 {
+	color: #5C8127;
+	margin: .825em 0 .5em 0;
+	font-size: 1.25em;
+}
+
+h5 {
+	color: #5C8127;
+	margin: .825em 0 .5em 0;
+	font-size: 1.125em;
+}
+
+h6 {
+	color: #5C8127;
+	margin: .825em 0 .5em 0;
+	font-size: 1em;
+}
+
+ul {
+	margin-left: 25px;
+	list-style-type: none;
+}
+
+ol {
+	margin-left: 25px;
+}
+
+blockquote {
+	margin: 0 0 18px 18px;
+	color: #666666;
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+/*--- Link Styles ---*/
+a:link,a:visited {
+	color: #0045df;
+	text-decoration: none;
+}
+
+a:hover,a:active {
+	color: #FF3300;
+	text-decoration: underline;
+}
+
+.common a:link,.common a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+
+.common a:hover,.common a:active {
+	color: #666666;
+	text-decoration: underline;
+}
+
+.important a:link,.important a:visited {
+	color: #FF0000;
+	text-decoration: none;
+}
+
+.important a:hover,.important a:active {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.navCommon a:link,.nav a:visited {
+	color: #0033FF;
+	text-decoration: none;
+}
+
+.navCommon a:hover,.nav a:active {
+	color: #0033FF;
+	text-decoration: underline;
+}
+
+/* Standard Definitions
+----------------------------------------*/
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearThis {
+	clear: both;
+}
+
+.small {
+	font-size: 12px;
+}
+
+.large {
+	font-size: 14px;
+}
+
+.light {
+	font-weight: lighter;
+}
+
+.soft {
+	color: #ccc;
+}
+
+.hide {
+	display: none;
+}
+
+.key {
+	font-weight: bold;
+	color: #D94624;
+}
+
+/*--------------font------------------*/
+.fB {
+	font-weight: bold
+}
+
+.f12 {
+	font-size: 12px
+}
+
+.f12gy {
+	color: #666666;
+}
+
+.f13 {
+	font-size: 13px
+}
+
+.f13B {
+	font-size: 14px;
+	font-weight: bold
+}
+
+.f14 {
+	font-size: 14px;
+	line-height: 22px
+}
+
+.p14 {
+	font-size: 14px;
+}
+
+.f14B {
+	font-size: 14px;
+	font-weight: bold
+}
+
+.f16 {
+	font-size: 16px
+}
+
+.f18 {
+    font-size:18px;
+}
+
+.f24 {
+    font-size:24px;
+}
+/*-----------color--------------*/
+.red {
+	color: #E10601
+}
+
+.block {
+	color: #000000;
+}
+.gray{
+    color:#666;
+}
+/* -------------------------------------------------------------- 
+  
+   layout.css
+   
+-------------------------------------------------------------- */
+
+#page{ width:950px; margin:auto;}
+.row{_zoom:1; margin-top:10px;}
+.main{width:100%;}
+.mainContent{width:auto; margin:0 240px 0 200px;}
+.sub{width:190px; margin-left:-100%;}
+.extra{width:230px; margin-left:-230px;}
+.main,.sub,.extra{float:left;overflow:hidden;}
+
+/*-------------------------前端分页样式-----------------------*/
+.front_sort ul.pages {
+float:right;
+display:block;
+border:none;
+text-transform:uppercase;
+font-size:10px;
+margin:10px 0 10px;
+padding:0;
+}
+
+.front_sort ul.pages li {
+list-style:none;
+float:left;
+border:1px solid #BFBFBF;
+text-decoration:none;
+text-align:center;
+margin:0 5px 0 0;
+padding:-3px 3px 3px 3px;
+width:20px;
+height:20px;
+cursor:pointer;
+}
+.front_sort ul.pages li.pgNext {
+list-style:none;
+float:left;
+border:1px solid #ccc;
+text-decoration:none;
+text-align:center;
+margin:0 5px 0 0;
+padding:-3px 3px 3px 3px;
+width:50px;
+height:20px;
+cursor:pointer;
+}
+.front_sort ul.pages li:hover {
+border:1px solid #BFBFBF;
+background:#5BA515 none repeat scroll 0 0;
+color:#FFF;
+}
+
+.front_sort ul.pages li.pgEmpty {
+border:1px solid #eee;
+color:#eee;
+}
+
+.front_sort ul.pages li.selected {
+border:1px solid #003f7e;
+color:#000;
+font-weight:700;
+background-color:#eee;
+}
+/*** input text 样式 ***/
+.text{
+	border:1px solid #CCCCCC;
+	color:#333;
+	font-size:14px;
+	padding:3px;
+}
+select{margin:3px 0; padding:2px; border:1px solid #999;}
+.width1{width:100px;}
+.width2{width:150px;}
+.width3{width:200px;}
+.width4{width:250px;}
+.width5{width:300px;}
+.width6{width:350px;}
+.width7{width:400px;}
+.width8{width:450px;}
+.width9{width:500px;}
+
+/*--------------------------end-----------------------------*/
