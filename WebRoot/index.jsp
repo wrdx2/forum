@@ -47,8 +47,8 @@
 				%>
 			</tr>
 			<%
-				Collection dao = topicList.getTopics();
-				Iterator it = dao.iterator();
+				Collection<Topic> dao = topicList.getTopics();
+				Iterator<Topic> it = dao.iterator();
 				int i = 1;
 				String bg;
 				while (it.hasNext()) {
